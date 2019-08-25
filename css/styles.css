@@ -1,3 +1,4 @@
+/* styles for mobile starting at 375px*/
 *{
     margin: 0;
     padding: 0;
@@ -46,6 +47,7 @@ h3{
     grid-row: 2 / span 1;
     grid-column: 1 / span 12;
     color: #fff;
+    font-size: 50pt;
     align-self: end;
     position: relative;
     top: 20px;
@@ -322,4 +324,66 @@ h3{
     font-weight: 300;
     line-height: 16pt;
     /* border: 1px solid gray; */
+}
+
+
+/* ******************************************** */
+
+@media only screen and (min-width: 600px){
+    .grid-container{
+        grid-template-rows: 50px 100px 100px 20px 1fr 50px 150px 150px 100px 130px /* 10 */ 180px 100px 130px 100px 130px 180px 150px 150px 100px 130px /* 20 */ 20px 180px 200px 30px 50px 200px 30px 50px 180px 80px /* 30 */ 20px 180px 150px 30px 50px 120px 120px;
+    }
+
+    .top{
+        font-size: 60pt;
+    }
+
+    .bottom{
+        font-size: 60pt;
+    }
+
+    .side-info1{
+        font-size: 9pt;
+    }
+
+    .side-info2{
+        font-size: 9pt;
+    }
+
+    .side-info3{
+        font-size: 9pt;
+    }
+
+    .side-info4{
+        font-size: 9pt;
+    }
+
+    .side-info5{
+        font-size: 9pt;
+    }
+
+    .caption1, .caption2, .caption3{
+        font-size: 6pt;
+    }
+}
+
+
+/* ******************************************** */
+
+@media only screen and (min-width: 768px){
+    .grid-container{
+        grid-template-rows: 120px 100px 100px 20px 1fr 50px 150px 150px 100px 130px /* 10 */ 180px 100px 130px 100px 130px 180px 150px 150px 100px 130px /* 20 */ 20px 180px 200px 30px 50px 200px 30px 50px 180px 80px /* 30 */ 20px 180px 150px 30px 50px 120px 120px;
+    }
+
+    .top{
+        font-size: 70pt;
+        position: relative;
+        top: 25px;
+    }
+
+    .intro{
+        grid-column: 3 / span 8;
+        font-size: 11pt;
+        line-height: 23pt;
+    }
 }
