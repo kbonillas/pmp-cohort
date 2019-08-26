@@ -372,7 +372,7 @@ h3{
 
 @media only screen and (min-width: 768px){
     .grid-container{
-        grid-template-rows: 120px 100px 100px 20px 1fr 50px 150px 150px 100px 130px /* 10 */ 180px 100px 130px 100px 130px 180px 150px 150px 100px 130px /* 20 */ 20px 180px 200px 30px 50px 200px 30px 50px 180px 80px /* 30 */ 20px 180px 150px 30px 50px 120px 120px;
+        grid-template-rows: 120px 100px 100px 20px 1fr 50px 150px 150px 150px 130px /* 10 */ 150px 100px 100px 150px 130px 150px 150px 150px 150px 130px /* 20 */ 20px 150px 200px 30px 50px 200px 30px 50px 180px 80px /* 30 */ 20px 180px 150px 30px 50px 120px 120px;
     }
 
     .top{
@@ -385,5 +385,71 @@ h3{
         grid-column: 3 / span 8;
         font-size: 11pt;
         line-height: 23pt;
+    }
+
+    .blue1{
+        grid-template-columns: 40px 1fr 1fr 40px;
+        grid-template-rows: 40px 1fr 20px 1fr 40px;
+    }
+
+    .blue2{
+        grid-template-columns: 40px 1fr 1fr 40px;
+        grid-template-rows: 40px 1fr 20px 1fr 40px;
+    }
+
+    .blue3{
+        grid-template-columns: 40px 1fr 1fr 40px;
+        grid-template-rows: 40px 1fr 20px 1fr 40px;
+    }
+
+    .caption1, .caption2, .caption3{
+        font-size: 6.5pt;
+    }
+}
+
+
+/* ******************************************** */
+
+@media only screen and (min-width: 992px){
+    .grid-container{
+        grid-template-rows: 180px 100px 100px 20px 1fr 50px 150px 150px 150px 130px /* 10 */ 150px 100px 100px 150px 130px 150px 150px 150px 150px 130px /* 20 */ 20px 150px 200px 30px 50px 200px 30px 50px 180px 80px /* 30 */ 20px 180px 150px 30px 50px 120px 120px;
+    }
+
+    .picture2{
+        grid-row: 8 / span 1;
+        grid-column: 1 / span 12;
+    }
+
+    .blue1{
+        display: grid;
+        grid-template-columns: 20px 1fr 20px 1fr 20px;
+        grid-template-rows: 20px 1fr 20px 1fr 20px;
+        grid-row: 7 / span 1;
+        grid-column: 6 / span 7;
+        background-color: #2C506F;
+    }
+
+    .side-info1{
+        grid-row: 2 / span 3;
+        grid-column: 2 / span 1;
+        font-size: 8pt;
+        line-height: 16pt;
+    }
+
+    .side-info2{
+        grid-row: 2 / span 3;
+        grid-column: 4 / span 1;
+        font-size: 8pt;
+        line-height: 16pt;
+    }
+
+    .ux-ui-content{
+        font-size: 8pt;
+        line-height: 16pt;
+    }
+
+    .ux-ui-law{
+        font-size: 8pt;
+        line-height: 16pt;
     }
 }
